@@ -35,6 +35,9 @@ namespace LoanApp.Bll.Service
             };
 
             _unitOfWork.Loan.Add(loanDto);
+            _unitOfWork.Save();
+
+            //Need to save Loan details in separate table 
 
             return true;
         }
