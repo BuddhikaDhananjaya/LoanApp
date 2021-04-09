@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="loanForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="loanAmount">loan Amount</label>          
+          <input type="text"
+                 formControlName="loanAmount"
+                 class="form-control"                 
+                 id="loanAmount"
+                 placeholder="loanAmount">          
+        </div>
+        <div class="form-group">
+          <label for="interestRate">Interest Rate</label>
+          <input type="text"
+                 formControlName="interestRate"
+                 class="form-control"
+                 id="interestRate"
+                 placeholder="interestRate">
+        </div>
+        <div class="form-group">
+          <label for="loanPeriod">Loan Period</label>
+          <input type="text"
+                 formControlName="loanPeriod"
+                 class="form-control"
+                 id="loanPeriod"
+                 placeholder="loanPeriod">
+        </div>
+        <div class="form-group">
+          <label for="customerName">Customer Name</label>
+          <input type="text"
+                 formControlName="customerName"
+                 class="form-control"
+                 id="customerName"
+                 placeholder="customerName">
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="text"
+                 formControlName="age"
+                 class="form-control"
+                 id="age"
+                 placeholder="age">
+        </div>
+        <div class="form-group">
+          <label for="nic">NIC</label>
+          <input type="text"
+                 formControlName="nic"
+                 class="form-control"
+                 id="nic"
+                 placeholder="nic">
+        </div>
+        <button type="submit" class="btn btn-primary">Process</button>
+        <button type="submit" class="btn btn-primary">Request Loan</button>
+      </form>
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+</div>
